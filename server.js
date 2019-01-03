@@ -12,13 +12,20 @@ app.get('/', (req, res) =>{
      res.render('home.hbs',{
          pagename: 'Home Page',
          currentYear: new Date().getFullYear()
-     })
+     });
 });
 
 app.get('/about', (req, res)=>{
    res.render('about.hbs',{
        pagename: 'About Page',
        currentYear: new Date().getFullYear()
+   });
+});
+
+app.get('/project',(req, res)=>{
+    res.render('project.hbs', {
+    pagename: 'Project Page',
+    currentYear: new Date().getFullYear()
    });
 });
 
